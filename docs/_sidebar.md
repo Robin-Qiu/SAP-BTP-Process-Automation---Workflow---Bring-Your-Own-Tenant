@@ -1,4 +1,4 @@
-<!-- _sidebar.md -->
+<!-- docs/_sidebar.md -->
 
 * [Introduction](/)
 * [Exercise 0-1 - Introduction](/00%20-%20Introduction.md)
