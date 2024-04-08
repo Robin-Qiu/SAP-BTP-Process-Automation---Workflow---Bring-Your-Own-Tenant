@@ -1,8 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 * [Introduction](/)
-* [Exercise 0-1 - Overview](/00%20-%20Introduction.md)
-* [Exercise 0-2 - Provisioning](/00%20-%20Provisioning.md)
+* [Exercise 0 - Overview](/00%20-%20Introduction.md)
 * [Exercise 1 - Requirements](/01%20-%20Requirements.md)
 * [Exercise 2 - Create Action Project](/02%20-%20Create%20Action%20Project.md)
 * [Exercise 3 - Create Process Automation Workflow](/03%20-%20Create%20Process%20Automation%20Workflow.md)
