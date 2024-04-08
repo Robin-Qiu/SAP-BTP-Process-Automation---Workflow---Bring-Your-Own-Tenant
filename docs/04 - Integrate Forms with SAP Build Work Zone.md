@@ -50,7 +50,8 @@ Once you have successfully subscribed to **SAP Build Process Automation** in **S
 * **clientsecret**
 * **url**
 
-These values are needed later in the Destination Configuration section.
+These values are needed later in the Destination Configuration section. 
+
 ![](vx_images/67196049896987.png )
 
 ---
