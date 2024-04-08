@@ -24,7 +24,7 @@ To prepare the S4 system for the scenario: (***Optional***)
 
 ![](vx_images/99366158262686.png )
 
-<mark>Download a sample destination for S/4HANA Cloud</mark> [here](pages/01-requirements/files/s4hc-destination.txt ':ignore :target=_self' ) :fa-solid fa-download:.
+> Download a sample destination for S/4HANA Cloud  [S4HC](/vx_attachments/154271525142569/S4HC) :truck::truck::truck:.
 
 ### Add destination to SAP Build
 

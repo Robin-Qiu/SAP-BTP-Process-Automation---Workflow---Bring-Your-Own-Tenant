@@ -1,0 +1,13 @@
+#Password=<< Existing password/certificate removed on export >>
+#
+#Sat Apr 06 10:01:09 UTC 2024
+Type=HTTP
+HTML5.DynamicDestination=true
+Authentication=BasicAuthentication
+WebIDEUsage=odata_gen
+Name=S4HC
+sap.processautomation.enabled=true
+ProxyType=Internet
+URL=https\://my300047.s4hana.ondemand.com/sap/opu/odata/sap
+User=ROBIN_DEMO_USER
+sap.applicationdevelopment.actions.enabled=true

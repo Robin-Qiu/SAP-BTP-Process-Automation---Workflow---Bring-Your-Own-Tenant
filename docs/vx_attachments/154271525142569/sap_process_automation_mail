@@ -1,0 +1,18 @@
+#mail.password=<< Existing password/certificate removed on export >>
+#
+#Mon Apr 08 07:07:40 UTC 2024
+Type=MAIL
+mail.user=sap_workshop@outlook.com
+mail.bpm.send.disabled=false
+mail.smtp.ssl.enable=False
+mail.smtp.from=sap_workshop@outlook.com
+mail.transport.protocol=smtp
+mail.smtp.starttls.required=true
+Authentication=BasicAuthentication
+mail.smtp.ssl.checkserveridentity=False
+mail.smtp.host=smtp.office365.com
+Name=sap_process_automation_mail
+mail.smtp.starttls.enable=True
+ProxyType=Internet
+mail.smtp.port=587
+mail.smtp.auth=true
