@@ -60,7 +60,7 @@ These values are needed later in the Destination Configuration section.
 1. Navigate to **Destinations > Create Destination**. Enter the destination name as `sap_process_automation_service`.
 
 > [!NOTE]
->  **During the workshop, the trainer will supply the destination template to you. You can import it and modify the parameters accordingly.**
+>  **During the workshop, the trainer will supply the destination template to you. You can import it and modify the parameters accordingly.**  [sap_process_automation_service](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/sap_process_automation_service ':include')  :truck::truck::truck:. 
 > 
 
 ![](vx_images/546523271915551.png )
