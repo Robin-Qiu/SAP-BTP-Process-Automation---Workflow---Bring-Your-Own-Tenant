@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 * [Introduction](/)
-* [Exercise 0-1 - Introduction](/docs/00%20-%20Introduction.md)
+* [Exercise 0-1 - Overview](/00%20-%20Introduction.md)
 * [Exercise 0-2 - Provisioning](/docs/00%20-%20Provisioning.md)
 * [Exercise 1 - Requirements](/docs/01%20-%20Requirements.md)
 * [Exercise 2 - Create Action Project](/docs/02%20-%20Create%20Action%20Project.md)
