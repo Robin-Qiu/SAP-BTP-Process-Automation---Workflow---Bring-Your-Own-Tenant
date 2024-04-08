@@ -12,7 +12,7 @@ In the previous exercise, we have built and deployed a business process. To trig
 2. Open the _Editable_ version:
 
    
-    ![](vx_images/504764641953227.png =900x)
+    ![](vx_images/504764641953227.png )
 
 ## Create a Data Type
 
@@ -23,7 +23,7 @@ You will configure the process to expect all these fields when it is triggered v
 1. From the overview of the project, create a new _Data Type_:
 
   
-    ![](vx_images/78535415836041.png =900x)
+    ![](vx_images/78535415836041.png )
 
 2. Give the following name and click _Create_:
 
@@ -31,20 +31,20 @@ You will configure the process to expect all these fields when it is triggered v
     Business Partner
     ```
 
-    ![](vx_images/221014330865879.png =500x)
+    ![](vx_images/221014330865879.png )
 
 3. Download the data type excel template: [BPDataType.xlsx](pages/05-api-trigger/files/BPDataType.xlsx ':ignore :target=_self') :fa-solid fa-download:. Click on _Import Excel File_:
 
  
     
-![](vx_images/420594567359013.png =900x)
+![](vx_images/420594567359013.png )
     > [!INFO]
     > You can also add fields manually, but importing an Excel makes things faster
 
 4. Select the file you just downloaded and click _Import an Excel file_:
 
     
-![](vx_images/534144304362875.png =500x)
+![](vx_images/534144304362875.png )
 5. The fields will populate. It should look like this:
 
   
@@ -224,9 +224,9 @@ Firstly, you need to set up the environment for your licensed product to test AP
 > [!INFO]
 > More information on how to get the OAuth2.0 Client Credential details in the documentation: [Determine service configuration parameters - SAP Build Process Automation](https://help.sap.com/docs/build-process-automation/80e3d1a6e74844548a7d168fd1f95a98/determine-service-configuration-parameters)
 
-![](vx_images/228634528596087.png )
-![](vx_images/78445827142565.png )
-![](vx_images/152405386827095.png )
+![](vx_images/228634528596087.png)
+![](vx_images/78445827142565.png)
+![](vx_images/152405386827095.png)
 
 ## Test the API Trigger
 
