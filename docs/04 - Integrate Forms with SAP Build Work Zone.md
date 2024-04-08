@@ -36,7 +36,7 @@ Once you have successfully subscribed to **SAP Build Process Automation** in **S
 1. Once you have successfully created the instance, select **… > Create Service Key**.
 ![](vx_images/529785394022502.png )
 
-2. Enter the name for Service Key as **spa-key **and choose **Create**.
+2. Enter the name for Service Key as `spa-key` and choose **Create**.
 ![](vx_images/469664056262779.png )
 
 
