@@ -7,7 +7,7 @@ In the previous exercise, we have built and deployed a business process. To trig
 1. Open your business process project `${number} BTP creation process`
 
 
-    ![](vx_images/367103906151070.png )
+    ![](vx_images/367103906151070.png)
 
 2. Open the _Editable_ version:
 
@@ -33,7 +33,8 @@ You will configure the process to expect all these fields when it is triggered v
 
     ![](vx_images/221014330865879.png )
 
-3. Download the data type excel template: [BPDataType.xlsx](pages/05-api-trigger/files/BPDataType.xlsx ':ignore :target=_self') :fa-solid fa-download:. Click on _Import Excel File_:
+3. Download the data type excel template: [BPDataType.xlsx](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/BPDataType.xlsx ':include')  :truck::truck::truck:. 
+Click on _Import Excel File_:
 
  
     
