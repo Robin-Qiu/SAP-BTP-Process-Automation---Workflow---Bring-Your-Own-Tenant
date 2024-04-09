@@ -25,6 +25,7 @@ To prepare the S4 system for the scenario: (***Optional***)
 ![](vx_images/99366158262686.png )
 
 > Download a sample destination for S/4HANA Cloud [S4HC](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/S4HC ':include')  :truck::truck::truck:.
+> The communication user credential for connecting to S/4HANA Cloud will be supplied during workshop and please reminder the trainer if he/she forgets to send out.
 
 ### Add destination to SAP Build
 
@@ -42,4 +43,5 @@ Follow [SMTP destination for SAP Process Automation](https://help.sap.com/docs/b
 
 ![](vx_images/428220874958644.png )
 
-Download a sample destination [sap_process_automation_mail](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/sap_process_automation_mail ':include')  :truck::truck::truck:.
+> Download a sample destination [sap_process_automation_mail](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/sap_process_automation_mail ':include')  :truck::truck::truck:.
+> The communication user credential for connecting to the testing mail server will be supplied during workshop and please reminder the trainer if he/she forgets to send out.
