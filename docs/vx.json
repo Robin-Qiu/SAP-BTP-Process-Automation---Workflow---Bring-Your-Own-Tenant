@@ -23,16 +23,6 @@
         },
         {
             "attachment_folder": "",
-            "created_time": "2024-04-08T10:53:02Z",
-            "id": "77",
-            "modified_time": "2024-04-08T12:31:40Z",
-            "name": "04 - Integrate Forms with SAP Build Work Zone.md",
-            "signature": "8927815552015256718",
-            "tags": [
-            ]
-        },
-        {
-            "attachment_folder": "",
             "created_time": "2024-04-08T10:50:19Z",
             "id": "76",
             "modified_time": "2024-04-09T06:01:02Z",
@@ -70,9 +60,82 @@
             "signature": "6857691953007701987",
             "tags": [
             ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-11T03:05:43Z",
+            "id": "83",
+            "modified_time": "2024-04-11T03:05:43Z",
+            "name": "index.html",
+            "signature": "5168684793861723015",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "205520557043726",
+            "created_time": "2024-04-11T03:05:47Z",
+            "id": "84",
+            "modified_time": "2024-04-15T11:05:23Z",
+            "name": "_sidebar.md",
+            "signature": "5370121079326462859",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-11T03:05:51Z",
+            "id": "85",
+            "modified_time": "2024-04-11T03:05:51Z",
+            "name": "README.md",
+            "signature": "7466934429745107855",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-11T14:05:27Z",
+            "id": "369",
+            "modified_time": "2024-04-11T14:05:27Z",
+            "name": "00 - Provisioning.md",
+            "signature": "75139380814540327",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-08T10:53:02Z",
+            "id": "371",
+            "modified_time": "2024-04-12T03:15:44Z",
+            "name": "04 - Integrate Forms with SAP Build Work Zone.md",
+            "signature": "5420482375486049513",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-15T10:54:18Z",
+            "id": "633",
+            "modified_time": "2024-04-15T10:54:18Z",
+            "name": "Create an Automation to Extract Data.md",
+            "signature": "8502966449476536428",
+            "tags": [
+            ]
+        },
+        {
+            "attachment_folder": "",
+            "created_time": "2024-04-15T10:54:18Z",
+            "id": "635",
+            "modified_time": "2024-04-15T10:54:18Z",
+            "name": "Hands-on Exercise- Document Information Extraction.md",
+            "signature": "6637951075273738348",
+            "tags": [
+            ]
         }
     ],
     "folders": [
+        {
+            "name": "media"
+        }
     ],
     "id": "74",
     "modified_time": "2024-04-08T10:03:05Z",
