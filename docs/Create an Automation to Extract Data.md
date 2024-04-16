@@ -26,7 +26,7 @@ activities and applications on a local machine.
 - Download [<u>Sales Order
   Data</u>](https://sap-my.sharepoint.com/:x:/p/floria_qian01/EckuMQDr7JtBmUCKLsyYx7sB_aCRVXYqRkOTyB1OZ78LtA?e=W3BHfO) 
 
-- **OR**
+ **OR**
 
 - Create the file yourself using the following data:
 
