@@ -21,7 +21,7 @@
 
 <!--
 
-* [Exercise 1 - Hands-on Exercise- Document Information Extraction](/Hands-on%20Exercise-%20Document%20Information%20Extraction/Hands-on%20Exercise-%20Document%20Information%20Extraction.md)
-* [Exercise 2 - Create an Automation to Extract Data](/Create%20an%20Automation%20to%20Extract%20Data/Create%20an%20Automation%20to%20Extract%20Data.md)
+* [Exercise 1 - Hands-on Exercise- Document Information Extraction](/Hands-on%20Exercise-%20Document%20Information%20Extraction.md)
+* [Exercise 2 - Create an Automation to Extract Data](/Create%20an%20Automation%20to%20Extract%20Data.md)
 
 -->

@@ -50,17 +50,17 @@ activities and applications on a local machine.
 
     - Choose +.
 
-<img src="./media/image1.png" 
+<img src="./media1/image1.png" 
 alt="001" />
 
 2.  Select Automation.
 
-<img src="./media/image2.png" 
+<img src="./media1/image2.png" 
 alt="001" />
 
 3.  Choose Blank Automation.
 
-<img src="./media/image3.png" 
+<img src="./media1/image3.png" 
 alt="001" />
 
 4.  A pop up will appear to configure the Desktop Agent version. Do the
@@ -75,7 +75,7 @@ alt="001" />
 
     - Choose the Confirm button.
 
-<img src="./media/image4.png" 
+<img src="./media1/image4.png" 
 alt="001" />
 
 5.  A new pop-up will appear to create the automation. Do the following
@@ -89,12 +89,12 @@ alt="001" />
 
 > Identifier will be auto-filled.
 
-<img src="./media/image5.png" 
+<img src="./media1/image5.png" 
 alt="001" />
 
 An automation Get Order Details will be created successfully.
 
-<img src="./media/image6.png" 
+<img src="./media1/image6.png" 
 alt="001" />
 
 **STEP 2**
@@ -113,13 +113,13 @@ automations.
 
 1.  Select Settings.
 
-<img src="./media/image7.png" 
+<img src="./media1/image7.png" 
 alt="001" />
 
 2.  In the Project Properties window, select Environment Variables,
     then + Create.
 
-<img src="./media/image8.png" 
+<img src="./media1/image8.png" 
 alt="001" />
 
 3.  In the create an environment variable screen:
@@ -130,13 +130,13 @@ alt="001" />
 
     - Choose the Create button.
 
-<img src="./media/image9.png" 
+<img src="./media1/image9.png" 
 alt="001" />
 
 4.  After the Environment Variable is created successfully, close the
     project properties window.
 
-<img src="./media/image10.png" 
+<img src="./media1/image10.png" 
 alt="001" />
 
 **STEP 3**
@@ -155,7 +155,7 @@ the data, the Excel application will be closed.
 1.  Select three dots next to Get Order Details, choose Open Editor,
     which navigates to the Design Studio to build the automation.
 
-<img src="./media/image11.png" 
+<img src="./media1/image11.png" 
 alt="001" />
 
 Since Excel is used in this automation, you have to open an Excel
@@ -170,7 +170,7 @@ activities.
 
     - Drag and drop the activity into the canvas.
 
-<img src="./media/image12.png" 
+<img src="./media1/image12.png" 
 alt="001" />
 
 Next, Excel Data Mapping is done with the Excel Cloud Link activity.
@@ -186,13 +186,13 @@ structure, making it possible to use throughout your project.
 
     - Drag and drop the activity into the canvas.
 
-<img src="./media/image13.png" 
+<img src="./media1/image13.png" 
 alt="001" />
 
 4.  Select Excel Cloud Link, in the details on the right side, choose
     the Edit activity button.
 
-<img src="./media/image14.png" 
+<img src="./media1/image14.png" 
 alt="001" />
 
 5.  In the Excel File screen:
@@ -201,7 +201,7 @@ alt="001" />
 
     - Choose the Orders.xlsx file which is saved on your machine.
 
-<img src="./media/image15.png" 
+<img src="./media1/image15.png" 
 alt="001" />
 
 > The Excel file is mapped automatically.
@@ -210,12 +210,12 @@ alt="001" />
     as OrderFilePath, which was created above as the parameter value
     for Workbook path.
 
-<img src="./media/image16.png" 
+<img src="./media1/image16.png" 
 alt="001" />
 
 7.  Select the button + From Excel data.
 
-<img src="./media/image17.png" 
+<img src="./media1/image17.png" 
 alt="001" />
 
 A pop up appears to create a data type. A Sales Order variable is needed
@@ -225,31 +225,31 @@ variable is automatically created from the Excel file columns.
 8.  Under Name of the data type, enter Sales Order and choose
     the Create button.
 
-<img src="./media/image18.png" 
+<img src="./media1/image18.png" 
 alt="001" />
 
 > Framework creates a data type with the columns of the Excel as the
 > field names. You can see it in the Artifacts section in the Overview
 > tab.
 
-<img src="./media/image19.png" 
+<img src="./media1/image19.png" 
 alt="001" />
 
 9.  Go to Get Order Details automation. In Excel Cloud Link activity on
     the right side, under Output Parameters, manually change the
     variable name to Orders.
 
-<img src="./media/image20.png" 
+<img src="./media1/image20.png" 
 alt="001" />
 
 10. Close the activity.
 
-<img src="./media/image21.png" 
+<img src="./media1/image21.png" 
 alt="001" />
 
 11. Click on the canvas.
 
-<img src="./media/image22.png" 
+<img src="./media1/image22.png" 
 alt="001" />
 
 Once Excel is no longer required, close the Excel instance. Close Excel
@@ -263,7 +263,7 @@ Instance activity closes an instance of Excel.
     - Drag and drop the activity into the canvas and save your
       automation.
 
-<img src="./media/image23.png" 
+<img src="./media1/image23.png" 
 alt="001" />
 
 **STEP 4**
@@ -276,7 +276,7 @@ of your automation between activities, screens, and scripts.
 1.  Click on the canvas and select the Input/Output section in
     Automation Details.
 
-<img src="./media/image24.png" 
+<img src="./media1/image24.png" 
 alt="001" />
 
 2.  Add Input parameters as following:
@@ -288,7 +288,7 @@ alt="001" />
 
     - In Data type choose: String.
 
-<img src="./media/image25.png" 
+<img src="./media1/image25.png" 
 alt="001" />
 
 3.  Add Output parameters as following:
@@ -300,7 +300,7 @@ alt="001" />
 
     - In Data type choose: Sales Order.
 
-<img src="./media/image26.png" 
+<img src="./media1/image26.png" 
 alt="001" />
 
 4.  Save your work.
@@ -321,7 +321,7 @@ represented by its number.
 
     - Drag and drop the Sales Order data type into the canvas.
 
-<img src="./media/image27.png" 
+<img src="./media1/image27.png" 
 alt="001" />
 
 > A variable of the data type Sales Order is created.
@@ -329,7 +329,7 @@ alt="001" />
 2.  Select Create Sales Order variable. Under Output Parameters enter
     the value as selectedOrderDetails.
 
-<img src="./media/image28.png" 
+<img src="./media1/image28.png" 
 alt="001" />
 
 3.  Save your work.
@@ -359,13 +359,13 @@ This control has the following loop parameters:
 
     - Drag and Drop the activity into the canvas.
 
-<img src="./media/image29.png" 
+<img src="./media1/image29.png" 
 alt="001" />
 
 2.  Select For Each activity, enter the value of Set looping List
     as Orders.
 
-<img src="./media/image30.png" 
+<img src="./media1/image30.png" 
 alt="001" />
 
 To match the desired order, a control activity has to be added to search
@@ -381,13 +381,13 @@ entered in the Form is available in data read from Excel in Step 2.
 
     - Drag and Drop the activity inside the For Each block.
 
-<img src="./media/image31.png" 
+<img src="./media1/image31.png" 
 alt="001" />
 
 4.  Choose Condition, select three dots next to Condition Expression
     field, select Edit Formula.
 
-<img src="./media/image32.png" 
+<img src="./media1/image32.png" 
 alt="001" />
 
 5.  A pop up window appears to enter the condition expression:
@@ -398,7 +398,7 @@ alt="001" />
 
     - Select the Save Expression button.
 
-<img src="./media/image33.png" 
+<img src="./media1/image33.png" 
 alt="001" />
 
 > If the order number is found in Excel, i.e. the condition is True, set
@@ -414,7 +414,7 @@ alt="001" />
     - Drag and Drop the activity into the canvas below the condition you
       set.
 
-<img src="./media/image34.png" 
+<img src="./media1/image34.png" 
 alt="001" />
 
 7.  Select Set Variable Value. In the configuration screen on the right,
@@ -424,7 +424,7 @@ alt="001" />
 
     - In the value field enter currentMember.
 
-<img src="./media/image35.png" 
+<img src="./media1/image35.png" 
 alt="001" />
 
 > Once the order number is found in the Excel, use the control End
@@ -439,7 +439,7 @@ alt="001" />
     - Drag and Drop the activity into the canvas just below the Set
       Variable Value.
 
-<img src="./media/image36.png" 
+<img src="./media1/image36.png" 
 alt="001" />
 
 9.  Use Log Message activity to print your results. To add Log Message:
@@ -449,7 +449,7 @@ alt="001" />
     - Drag and Drop the activity into the canvas outside the For
       Each loop.
 
-<img src="./media/image37.png" 
+<img src="./media1/image37.png" 
 alt="001" />
 
 10. Use the activity to check selectedOrderDetails in testing mode. To
@@ -477,7 +477,7 @@ data through the End step to expose the data outside the automation.
 
     - Save the Automation.
 
-<img src="./media/image38.png" 
+<img src="./media1/image38.png" 
 alt="001" />
 
 > Make sure to add the steps Condition, Set Variable Value, End
@@ -485,7 +485,7 @@ alt="001" />
 
 2.  The complete Get Order Details automation looks as below.
 
-<img src="./media/image39.png" 
+<img src="./media1/image39.png" 
 alt="001" />
 
 > Now you will map the Automation Parameters with the Form Parameters.
@@ -493,13 +493,13 @@ alt="001" />
 3.  Select Order Processing process. Choose Get Order Details automation
     in the process.
 
-<img src="./media/image40.png" 
+<img src="./media1/image40.png" 
 alt="001" />
 
 4.  In Get Order Details, map the input parameter OrderNumber of the
     automation with the Order Number of Order Processing Form.
 
-<img src="./media/image41.png" 
+<img src="./media1/image41.png" 
 alt="001" />
 
 5.  Choose the Save button.
@@ -511,7 +511,7 @@ Test the automation
 1.  Navigate back to the automation Get Order Details and choose
     the Test button.
 
-<img src="./media/image42.png" 
+<img src="./media1/image42.png" 
 alt="001" />
 
 2.  In the Test Automation window, enter the parameters to test the
@@ -524,7 +524,7 @@ alt="001" />
 
 3.  Select Test button.
 
-<img src="./media/image43.png" 
+<img src="./media1/image43.png" 
 alt="001" />
 
 4.  Test Results:
@@ -543,7 +543,7 @@ alt="001" />
 
     - Prints the selected order details.
 
-<img src="./media/image44.png" 
+<img src="./media1/image44.png" 
 alt="001" />
 
 **STEP 9**
@@ -559,7 +559,7 @@ Excel file, simplify the start form by deleting the not needed fields.
 
     - Select Open Editor.
 
-<img src="./media/image45.png" 
+<img src="./media1/image45.png" 
 alt="001" />
 
 2.  In the form delete following inputs by selecting the 3 dots next to
@@ -573,13 +573,13 @@ alt="001" />
 
     - Shipping Country.
 
-<img src="./media/image46.png" 
+<img src="./media1/image46.png" 
 alt="001" />
 
 3.  Save the Form, close the Form Editor and go back to the Order
     Processing tab.
 
-<img src="./media/image47.png" 
+<img src="./media1/image47.png" 
 alt="001" />
 
 **STEP 10**
@@ -594,7 +594,7 @@ Form outputs.
 
 1.  Click on Condition and choose Open Condition Editor.
 
-<img src="./media/image48.png" 
+<img src="./media1/image48.png" 
 alt="001" />
 
 2.  In the Edit Branch Condition, select conditions :
@@ -607,7 +607,7 @@ alt="001" />
 
 3.  Choose Apply to add the condition to the business process.
 
-<img src="./media/image49.png" 
+<img src="./media1/image49.png" 
 alt="Process Condition" />
 
 **STEP 11**
@@ -617,7 +617,7 @@ Mapping forms of the process
 The different Forms of the process will need Inputs mapping from the
 automation Outputs.
 
-<img src="./media/image50.png" 
+<img src="./media1/image50.png" 
 alt="001" />
 
 1.  Select the Auto Approval Notification and go to the Inputs :
@@ -628,7 +628,7 @@ alt="001" />
     - In the Expected Delivery Date field,
       choose expectedDeliveryDate from the Automation outputs.
 
-<img src="./media/image51.png" 
+<img src="./media1/image51.png" 
 alt="001" />
 
 2.  Select the Approval Form and go to the Inputs :
@@ -639,22 +639,22 @@ alt="001" />
     - In the Expected Delivery Date field,
       choose expectedDeliveryDate from the Automation outputs.
 
-<img src="./media/image52.png" 
+<img src="./media1/image52.png" 
 alt="001" />
 
 3.  Do the same for the Order Confirmation Notification.
 
-<img src="./media/image53.png" 
+<img src="./media1/image53.png" 
 alt="001" />
 
 4.  Do the same for the Order Rejection Notification.
 
-<img src="./media/image54.png" 
+<img src="./media1/image54.png" 
 alt="001" />
 
 5.  Save the Process.
 
-<img src="./media/image55.png" 
+<img src="./media1/image55.png" 
 alt="001" />
 
 You have successfully completed creating an automation in your process.
@@ -697,17 +697,17 @@ Prerequisites
 
 1.  In the process builder, choose + of the default conditional flow.
 
-<img src="./media/image56.png" 
+<img src="./media1/image56.png" 
 alt="001" />
 
 2.  Select Decision.
 
-<img src="./media/image57.png" 
+<img src="./media1/image57.png" 
 alt="001b" />
 
 3.  Click on Blank Decision.
 
-<img src="./media/image58.png" 
+<img src="./media1/image58.png" 
 alt="001c" />
 
 4.  In the Create Decision window, do the following:
@@ -719,14 +719,14 @@ alt="001c" />
 
     - Choose Create button.
 
-<img src="./media/image59.png" 
+<img src="./media1/image59.png" 
 alt="002" />
 
 5.  Now you have to model the decision. For that, choose the 3 dots next
     to Determine Approver decision, to open the menu and choose Open
     Editor.
 
-<img src="./media/image60.png" 
+<img src="./media1/image60.png" 
 alt="002" />
 
 6.  A decision editor opens. You can see the decision diagram on the
@@ -745,7 +745,7 @@ meaning that they will run in the order in which they are added to the
 policy, and only the results of the last rule execution will be given as
 the final output of the decision.
 
-<img src="./media/image61.png" 
+<img src="./media1/image61.png" 
 alt="002" />
 
 > Completed
@@ -773,12 +773,12 @@ step, you will create an Approver data object for decision output.
 
 1.  Click on the Open Project Content icon as below.
 
-<img src="./media/image62.png" 
+<img src="./media1/image62.png" 
 alt="002" />
 
 2.  Select +. Choose Create \> Data Type.
 
-<img src="./media/image63.png" 
+<img src="./media1/image63.png" 
 alt="002" />
 
 3.  In the Create Data Type window, do the following:
@@ -790,13 +790,13 @@ alt="002" />
 
     - Choose Create button.
 
-<img src="./media/image64.png" 
+<img src="./media1/image64.png" 
 alt="002" />
 
 4.  In the Approver data type screen, choose New Field to add a new
     attribute to the data object.
 
-<img src="./media/image65.png" 
+<img src="./media1/image65.png" 
 alt="002" />
 
 5.  In the Field Details section on the right, in the Name field
@@ -805,18 +805,18 @@ alt="002" />
 You can choose the Type dropdown list to see the different kind of data
 types that are supported like Number, Password, Date, Time, Boolean etc.
 
-<img src="./media/image66.png" 
+<img src="./media1/image66.png" 
 alt="002" />
 
 6.  Similarly, add another attribute UserGroup of Type String to the
     data type.
 
-<img src="./media/image67.png" 
+<img src="./media1/image67.png" 
 alt="002" />
 
 7.  Save changes.
 
-<img src="./media/image68.png" 
+<img src="./media1/image68.png" 
 alt="002" />
 
 > Completed
@@ -835,14 +835,14 @@ alt="002" />
 
 1.  Go back to Determine Approver decision tab.
 
-<img src="./media/image69.png" 
+<img src="./media1/image69.png" 
 alt="002" />
 
 2.  In the Determine Approver section, you will select Add Input
     Parameter button and Add Output Parameter button to configure input
     and output parameters.
 
-<img src="./media/image70.png" 
+<img src="./media1/image70.png" 
 alt="002" />
 
 3.  Configure Input Parameter:
@@ -853,7 +853,7 @@ alt="002" />
 
     - In Type choose: Sales Order.
 
-<img src="./media/image71.png" 
+<img src="./media1/image71.png" 
 alt="002" />
 
 4.  Configure Output Parameter:
@@ -864,7 +864,7 @@ alt="002" />
 
     - In Type choose: Approver.
 
-<img src="./media/image72.png" 
+<img src="./media1/image72.png" 
 alt="002" />
 
 5.  Save changes.
@@ -872,12 +872,12 @@ alt="002" />
 6.  Then you will create the actual decision-making parts that make the
     decision in the process. Under Determine approver, select Rules.
 
-<img src="./media/image73.png" 
+<img src="./media1/image73.png" 
 alt="002" />
 
 7.  Select Add Rule.
 
-<img src="./media/image74.png" 
+<img src="./media1/image74.png" 
 alt="002" />
 
 8.  In the Create Rule window:
@@ -891,7 +891,7 @@ alt="002" />
 
     - Choose Next Step button.
 
-<img src="./media/image75.png" 
+<img src="./media1/image75.png" 
 alt="002" />
 
 A decision table is a tabular representation of the rule with If and
@@ -908,7 +908,7 @@ structure that will be returned after the decision is run.
 
     - Choose Next Step button.
 
-<img src="./media/image76.png" 
+<img src="./media1/image76.png" 
 alt="002" />
 
 10. Configure the output or result of the decision table. Under Result
@@ -920,12 +920,12 @@ alt="002" />
 
     - Choose Next Step button.
 
-<img src="./media/image77.png" 
+<img src="./media1/image77.png" 
 alt="002" />
 
 11. Review and choose Create button to create the rule.
 
-<img src="./media/image78.png" 
+<img src="./media1/image78.png" 
 alt="002" />
 
 You can use the Settings option to easily define these If and Then
@@ -934,17 +934,17 @@ header expressions with inline suggestions or free-flow typing.
 12. In the newly created Decision Table, add values to condition and
     result columns.
 
-<img src="./media/image79.png" 
+<img src="./media1/image79.png" 
 alt="002" />
 
 13. Click in the first field (first column)
 
-<img src="./media/image80.png" 
+<img src="./media1/image80.png" 
 alt="002" />
 
 14. Type EXISTSIN, and choose exists in from Array Operators.
 
-<img src="./media/image81.png" 
+<img src="./media1/image81.png" 
 alt="002" />
 
 15. Continue typing, and write this expression: EXISTSIN \[‘United
@@ -954,7 +954,7 @@ alt="002" />
 > You can either type-in the entire expression as free-flow or use the
 > context help to write the expression.
 
-<img src="./media/image82.png" 
+<img src="./media1/image82.png" 
 alt="002" />
 
 Remember that for all String type data object attributes, you must add a
@@ -963,7 +963,7 @@ single quote (’) before and after the text.
 16. Choose the input field of Order Amount column (second column of the
     decision table) and enter \<= 100000.
 
-<img src="./media/image83.png" 
+<img src="./media1/image83.png" 
 alt="002" />
 
 17. Similarly, enter the following expressions for the respective result
@@ -975,7 +975,7 @@ alt="002" />
 
 > Do not forget to put single-quote (’) for string type values.
 
-<img src="./media/image84.png" 
+<img src="./media1/image84.png" 
 alt="002" />
 
 User Group is a role collection or group created in the BTP cockpit or
@@ -1004,7 +1004,7 @@ empty result will be returned.
 
     - From the dropdown options, select Insert After.
 
-<img src="./media/image85.png" 
+<img src="./media1/image85.png" 
 alt="002" />
 
 19. Similarly, enter the following values for the new row:
@@ -1027,7 +1027,7 @@ alt="002" />
 > validation issues in the decision table, then Save will not happen and
 > the errors will be shown in the Design Console.
 
-<img src="./media/image86.png" 
+<img src="./media1/image86.png" 
 alt="002" />
 
 > Completed
@@ -1054,7 +1054,7 @@ Knowledge Base
 Article</u>](https://launchpad.support.sap.com/#/notes/3207153) for the
 complete workaround.
 
-<img src="./media/image87.png" 
+<img src="./media1/image87.png" 
 alt="002" />
 
 You can choose to map the Single Properties from the selected order
@@ -1071,7 +1071,7 @@ following decision table input with the process content:
 
 2.  Save the process.
 
-<img src="./media/image88.png" 
+<img src="./media1/image88.png" 
 alt="002" />
 
 You might see an error symbol on your decision. This is because the
@@ -1113,7 +1113,7 @@ Congratulations! Your answer is correct
 
 > You can modify your selection as needed.
 
-<img src="./media/image89.png" 
+<img src="./media1/image89.png" 
 alt="002" />
 
 3.  Save your work.
@@ -1155,17 +1155,17 @@ processes – and this view is created automatically, in real time.
 1.  In the Process Builder open the process and on the right-hand side,
     select 
 
-> <img src="./media/image90.png" 
+> <img src="./media1/image90.png" 
 > alt="Process Details icon" />
 >
 >  icon to view the process details.
 
-<img src="./media/image91.png" 
+<img src="./media1/image91.png" 
 alt="Find Visibility tab" />
 
 2.  Then, select the tab Visibility.
 
-<img src="./media/image92.png" 
+<img src="./media1/image92.png" 
 alt="Find Visibility tab" />
 
 Here you define the connection between the process context and the newly
@@ -1174,7 +1174,7 @@ to be created visibility scenario.
 3.  Select + on the right panel to add the relevant attributes from the
     process.
 
-<img src="./media/image93.png" 
+<img src="./media1/image93.png" 
 alt="Plus Sign to add attributes" />
 
 4.  Add the following attributes:
@@ -1191,7 +1191,7 @@ alt="Plus Sign to add attributes" />
 
     - Customer Name
 
-<img src="./media/image94.png" 
+<img src="./media1/image94.png" 
 alt="Added Attributes" />
 
 > The relevant attributes are the ones that could be used to measure,
@@ -1206,17 +1206,17 @@ alt="Added Attributes" />
 
 1.  Select the Open Project Content icon as below.
 
-<img src="./media/image95.png" 
+<img src="./media1/image95.png" 
 alt="New visibility scenario" />
 
 2.  Select +. Choose Create \> Visibility Scenario.
 
-<img src="./media/image96.png" 
+<img src="./media1/image96.png" 
 alt="New visibility scenario" />
 
 3.  Set Name to Sales Order Visibility Scenario then click Create.
 
-<img src="./media/image97.png" 
+<img src="./media1/image97.png" 
 alt="Details visibility scenario" />
 
 Please ensure you use a unique name, to make it easier to identify your
@@ -1230,7 +1230,7 @@ The Visibility Scenario is created.
 > To make it better understandable what the instances are processing:
 > Sales Orders.
 
-<img src="./media/image98.png" 
+<img src="./media1/image98.png" 
 alt="Change Instance(s) label" />
 
 > Completed
@@ -1245,12 +1245,12 @@ alt="Change Instance(s) label" />
 1.  Select +, then Add Process in Processes tab in Sales Order
     Visibility Scenario.
 
-<img src="./media/image99.png" 
+<img src="./media1/image99.png" 
 alt="Add Process to visibility scenario" />
 
 2.  Select Order Processing process.
 
-<img src="./media/image100.png" 
+<img src="./media1/image100.png" 
 alt="Select Process" />
 
 This will lead to the visibility scenario configuration screen, where
@@ -1266,7 +1266,7 @@ these can be viewed and controlled:
 3.  Change within the following context data the data types. Select the
     pencil icon.
 
-<img src="./media/image101.png" 
+<img src="./media1/image101.png" 
 alt="Change data types in context data" />
 
 | Name                 | Current Data Type | New Data Type |
@@ -1275,7 +1275,7 @@ alt="Change data types in context data" />
 | orderAmount          | String            | Double        |
 | orderDate            | String            | Date          |
 
-<img src="./media/image102.png" 
+<img src="./media1/image102.png" 
 alt="Details to change data type of expected delivery date" />
 
 > Completed
@@ -1292,12 +1292,12 @@ alt="Details to change data type of expected delivery date" />
 
 2.  Change Target Type from None to Constant.
 
-<img src="./media/image103.png" 
+<img src="./media1/image103.png" 
 alt="Change Target Type to constant" />
 
 3.  Set Target Value to 10 Min and Threshold to 50%.
 
-<img src="./media/image104.png" 
+<img src="./media1/image104.png" 
 alt="Change Target Value" />
 
 The means: as soon as processing duration crosses 5 minutes (50%
@@ -1313,7 +1313,7 @@ it will change to “Critical”.
 1.  Move to Performance Indicators tab in Sales Order Visibility
     Scenario and add additional ones or leave them as is.
 
-<img src="./media/image105.png" 
+<img src="./media1/image105.png" 
 alt="Performance Indicators" />
 
 2.  Click Save.
@@ -1346,15 +1346,15 @@ Prerequisites
 
 > Release and deploy the business process
 
-<img src="./media/image106.png" 
+<img src="./media1/image106.png" 
 alt="Release" />
 
-<img src="./media/image107.png" 
+<img src="./media1/image107.png" 
 alt="Deploy" />
 
 1.  Choose an Environment and select Deploy.
 
-<img src="./media/image108.png" 
+<img src="./media1/image108.png" 
 alt="Environment" />
 
 2.  While deploying, the OrderFilePath data type should be the path to
@@ -1362,7 +1362,7 @@ alt="Environment" />
 
 3.  Choose Deploy.
 
-<img src="./media/image109.png" 
+<img src="./media1/image109.png" 
 alt="OrderFilePath" />
 
 > Completed
@@ -1378,14 +1378,14 @@ alt="OrderFilePath" />
 1.  From the deployed version of the Business Process Project in
     the Overview section, open the process Order Processing.
 
-<img src="./media/image110.png" 
+<img src="./media1/image110.png" 
 alt="Run" />
 
 2.  Choose Order Processing Form.
 
 3.  Choose the Copy icon aside the Form Link.
 
-<img src="./media/image111.png" 
+<img src="./media1/image111.png" 
 alt="Run copy the form link" />
 
 4.  Open the Form pasting the Form Link in a browser window.
@@ -1400,7 +1400,7 @@ alt="Run copy the form link" />
 > enter any random order number or else the automation will not give any
 > results.
 
-<img src="./media/image112.png" 
+<img src="./media1/image112.png" 
 alt="Run open the form" />
 
 After you choose the Submit button, you will be notified that the form
@@ -1423,14 +1423,14 @@ has been successfully submitted.
 
 1.  Start in the Lobby and open the My Inbox.
 
-<img src="./media/image113.png" 
+<img src="./media1/image113.png" 
 alt="Lobby" />
 
 2.  After opening the My Inbox application, you will see on the
     left-hand side all the tasks listed. Select the Approval Form,
     complete it and choose Approve.
 
-<img src="./media/image114.png" 
+<img src="./media1/image114.png" 
 alt="My Inbox Actions" />
 
 > The provided tasks and forms might look different than this
@@ -1445,7 +1445,7 @@ alt="My Inbox Actions" />
 > acknowledge the notification sent via the approval process, the
 > process will be completed.
 
-<img src="./media/image115.png" 
+<img src="./media1/image115.png" 
 alt="Confirmation Form" />
 
 > Completed
@@ -1472,7 +1472,7 @@ alt="Confirmation Form" />
 1.  To monitor all the running instances of the process, navigate
     to Monitoring \> Monitor\> Process and Workflow Instances.
 
-<img src="./media/image116.png" 
+<img src="./media1/image116.png" 
 alt="Monitor" />
 
 In there, you will see all the running, erroneous and canceled process
@@ -1494,12 +1494,12 @@ entire process has been progressing. You can also see some basic runtime
 information for each activity such activity name, who started it, when
 was it completed etc.
 
-<img src="./media/image117.png" 
+<img src="./media1/image117.png" 
 alt="Monitor" />
 
 3.  Go to Automation Jobs under Monitoring.
 
-<img src="./media/image118.png" 
+<img src="./media1/image118.png" 
 alt="Monitor" />
 
 4.  Choose the Warning icon (if applicable) to learn more about the
@@ -1509,13 +1509,13 @@ If this is the case, go to the [<u>Control
 Tower</u>](https://developers.sap.com/tutorials/spa-run-agent-settings.html) section
 and add your agent in order to run the Automation Job.
 
-<img src="./media/image119.png" 
+<img src="./media1/image119.png" 
 alt="Monitor" />
 
 In the case below, the Desktop agent version installed locally is less
 than the desktop agent version configured in the project settings.
 
-<img src="./media/image120.png" 
+<img src="./media1/image120.png" 
 alt="Monitor" />
 
 CAUTION: Desktop agent version installed locally should be greater than
@@ -1530,7 +1530,7 @@ As you can see in the screenshot below, the configured agent version is
 3.22 which is greater than the local registered version of 3.19. You
 will need to choose a version that is less or equal to 3.19
 
-<img src="./media/image121.png" 
+<img src="./media1/image121.png" 
 alt="Monitor" />
 
 6.  Once you have configured an agent version that is less or equal to
@@ -1539,7 +1539,7 @@ alt="Monitor" />
 
 7.  You will see the automation ran successfully as below:
 
-<img src="./media/image122.png" 
+<img src="./media1/image122.png" 
 alt="Monitor" />
 
 The process instance progresses further to the approval step in the
@@ -1550,18 +1550,18 @@ completed, the instance will be completed successfully.
 
 9.  Under Status, select Completed.
 
-<img src="./media/image123.png" 
+<img src="./media1/image123.png" 
 alt="Monitor" />
 
 10. Select your completed Order Processing instance.
 
-<img src="./media/image124.png" 
+<img src="./media1/image124.png" 
 alt="Monitor" />
 
 Again you may check the status of the Logs and Context. The instance has
 completed successfully.
 
-<img src="./media/image125.png" 
+<img src="./media1/image125.png" 
 alt="Monitor" />
 
 - **STEP 5**
@@ -1570,13 +1570,13 @@ alt="Monitor" />
 
 1.  From the Monitoring tab, select Visibility Scenarios tile.
 
-<img src="./media/image126.png" 
+<img src="./media1/image126.png" 
 alt="Visibility Scenarios" />
 
 2.  Select the Sales Order Visibility Scenario and click on the icon on
     the top right corner to navigate to the dashboard.
 
-<img src="./media/image127.png" 
+<img src="./media1/image127.png" 
 alt="Dashboard link" />
 
 3.  You will be navigated to the Sales Order Visibility
@@ -1587,7 +1587,7 @@ depending on the time it has taken, there might be different results.
 Please now feel free to explore the details and discover what is
 included in each tile. You could even navigate into single instances.
 
-<img src="./media/image128.png" 
+<img src="./media1/image128.png" 
 alt="Browse Scenario" />
 
 *Congratulations! You have completed the exercise!*
