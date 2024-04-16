@@ -10,6 +10,12 @@ Prerequisites
 - Import [<u>Build Your First Business Process with SAP Build Process
   Automation </u>](https://sap-my.sharepoint.com/:u:/p/floria_qian01/EWEUDAwwVlRJlLcoh7fVwPoBZCkSlJ90FvovPr69DfD9jw?e=yjZqPL)
 
+
+![](vx_images/494946439035400.png)
+
+
+![](vx_images/101701262170263.png)
+
 An Automation is a succession of steps to orchestrate multiple
 activities and applications on a local machine.
 
