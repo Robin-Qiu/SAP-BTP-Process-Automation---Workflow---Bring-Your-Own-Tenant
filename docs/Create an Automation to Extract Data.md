@@ -1,6 +1,6 @@
-<span class="mark">Create an Automation to Extract Data</span>
+## Create an Automation to Extract Data
 
-Prerequisites
+**Prerequisites**
 
 - A windows machine
 
