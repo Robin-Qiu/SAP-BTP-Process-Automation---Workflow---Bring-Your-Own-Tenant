@@ -8,7 +8,7 @@
   Agent</u>](https://developers.sap.com/tutorials/spa-setup-desktop-3-0-agent.html)
 
 - Import [<u>Build Your First Business Process with SAP Build Process
-  Automation</u>](https://sap-my.sharepoint.com/:u:/p/floria_qian01/EWEUDAwwVlRJlLcoh7fVwPoBZCkSlJ90FvovPr69DfD9jw?e=yjZqPL) 
+  Automation </u>](https://sap-my.sharepoint.com/:u:/p/floria_qian01/EWEUDAwwVlRJlLcoh7fVwPoBZCkSlJ90FvovPr69DfD9jw?e=yjZqPL)
 
 An Automation is a succession of steps to orchestrate multiple
 activities and applications on a local machine.
@@ -1329,45 +1329,22 @@ monitor the Process Visibility Dashboard.
 Run the business process with a full monitoring of the workflow
 instances and automation jobs
 
-You will learn
-
-- How to run the Process
-
-- How to work on the Tasks
-
-- How to monitor Process and Automation
-
-- How to gain visibility into the Business Process
-
-- How to retrieve the sample project from the Store
-
 Prerequisites
 
-- Complete [<u>Agent Management settings to execute the process with an
-  automation</u>](https://developers.sap.com/tutorials/spa-run-agent-settings.html)
+- Complete <u>Agent Management settings to execute the process with an
+  automation</u>
 
-- Complete [<u>Create an Automation to Extract
-  Data</u>](https://developers.sap.com/tutorials/spa-vl-create-automation.html)
+- Complete <u>Create an Automation to Extract Data</u>
 
-- Complete [<u>Create a
-  Decision</u>](https://developers.sap.com/tutorials/spa-vl-create-decision.html)
+- Complete <u>Create a Decision</u>
 
-- Complete [<u>Create Process Visibility
-  Scenario</u>](https://developers.sap.com/tutorials/spa-vl-create-process-visibility.html)
+- Complete <u>Create Process Visibility Scenario</u>
 
 <!-- -->
 
 - **STEP 1**
 
 > Release and deploy the business process
->
-> Before releasing and deploying your business process, please make sure
-> you have completed the required [<u>Agent Management settings to
-> execute the process with an
-> automation</u>](https://developers.sap.com/tutorials/spa-run-agent-settings.html).
->
-> Once you have taken care of the agent management settings, you can
-> release and deploy the business process project to run the process.
 
 <img src="./media/image106.png" 
 alt="Release" />
