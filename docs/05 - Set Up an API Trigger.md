@@ -7,7 +7,7 @@ In the previous exercise, we have built and deployed a business process. To trig
 1. Open your business process project `${number} BTP creation process`
 
 
-    ![](vx_images/367103906151070.png)
+![](vx_images/367103906151070.png)
 
 2. Open the _Editable_ version:
 
