@@ -953,8 +953,8 @@ alt="002" />
 <img src="./media1/image81.png" 
 alt="002" />
 
-15. Continue typing, and write this expression: EXISTSIN \[‘United
-    Kingdom’, ‘India’ , ‘Germany’\]. After you have finished, press
+15. Continue typing, and write this expression: EXISTSIN \['United
+    Kingdom', 'India', 'Germany'\]. After you have finished, press
     Enter key or click outside the input field to confirm.
 
 > You can either type-in the entire expression as free-flow or use the
