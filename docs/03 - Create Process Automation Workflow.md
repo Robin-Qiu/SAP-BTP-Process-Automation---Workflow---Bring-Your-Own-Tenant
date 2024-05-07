@@ -418,7 +418,7 @@ Now that the steps of the process are clear, let's complete the settings of each
 4. Moving to the next step, click in the Action _Creates a new business partner record_. Create a new destination variable:
 
 
- ![](vx_images/75016854771474.png )
+![](vx_images/75016854771474.png )
 
 
    This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
@@ -428,7 +428,7 @@ Now that the steps of the process are clear, let's complete the settings of each
 ```
 
  
- ![](vx_images/39383980827016.png )
+![](vx_images/39383980827016.png )
 
 5. As before, go to the tab _Inputs_ and map the data to the API fields:
 
