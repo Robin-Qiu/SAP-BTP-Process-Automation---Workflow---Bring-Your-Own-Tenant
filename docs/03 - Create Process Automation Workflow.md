@@ -420,11 +420,12 @@ Now that the steps of the process are clear, let's complete the settings of each
 
  ![](vx_images/75016854771474.png )
 
-    This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
 
-    ```
+   This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
+    
+```
     s4hDestination
-    ```
+```
 
  
  ![](vx_images/39383980827016.png )
