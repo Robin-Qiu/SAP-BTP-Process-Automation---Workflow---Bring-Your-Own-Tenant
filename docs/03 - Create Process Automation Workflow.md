@@ -415,13 +415,13 @@ Now that the steps of the process are clear, let's complete the settings of each
     
     ![](vx_images/27652879241518.png )
 
-4. Moving to the next step, click in the Action _Creates a new business partner record_. Create a new destination variable:
+4. Moving to the next step, click in the **Action Creates a new business partner record**. Create a new destination variable:
 
 
 ![](vx_images/75016854771474.png )
 
 
-   This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
+This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
     
 ```
     s4hDestination
