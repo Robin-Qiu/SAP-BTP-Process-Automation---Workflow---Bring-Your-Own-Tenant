@@ -1,5 +1,7 @@
 <!-- docs/_sidebar.md -->
 
+![](vx_images/105352198558845.png)
+
 <h2 style="text-align: center;"># Session 1 #</h2>
 
 ---
