@@ -1,4 +1,9 @@
+<div class="draftWatermark"></div>
+
+
 ## Create an Automation to Extract Data
+
+---
 
 **Prerequisites**
 

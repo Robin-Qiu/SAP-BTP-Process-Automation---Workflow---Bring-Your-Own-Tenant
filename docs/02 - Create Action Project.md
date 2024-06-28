@@ -1,4 +1,8 @@
+<div class="draftWatermark"></div>
+
 # Action project: Business Partner (A2X)
+
+---
 
 ## Review API specification
 

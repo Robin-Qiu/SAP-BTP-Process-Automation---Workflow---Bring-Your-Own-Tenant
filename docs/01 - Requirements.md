@@ -1,4 +1,9 @@
+<div class="draftWatermark"></div>
+
+
 # Requirements for Business Partner scenario
+
+---
 
 <!-- - SAP Build Process Automation subscription ([instructions here](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/subscribe-to-sap-build-process-automation-standard-plan)) -->
 

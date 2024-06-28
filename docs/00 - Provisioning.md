@@ -1,4 +1,8 @@
+<div class="draftWatermark"></div>
+
 # Setting up subaccount for SAP Build Process Automation
+
+---
 
 ## 1. Verify entitlements
 

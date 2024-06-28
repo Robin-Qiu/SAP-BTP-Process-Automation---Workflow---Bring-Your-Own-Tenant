@@ -1,4 +1,8 @@
+<div class="draftWatermark"></div>
+
 # Welcome to Business Partner creation with SAP Build Process Automation
+
+---
 
 This page contains an exercise to showcase the features of SAP Build Process Automation. The exercise covers a simple scenario: _Business Partner creation process_:
 

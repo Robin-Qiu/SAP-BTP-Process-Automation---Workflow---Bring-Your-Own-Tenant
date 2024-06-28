@@ -1,4 +1,10 @@
+<div class="draftWatermark"></div>
+
+
 # Set up an API trigger
+
+
+---
 
 In the previous exercise, we have built and deployed a business process. To trigger this process we used a form. This is fine for simple scenarios where end users are expected to provide the information. Many other times, you will want to trigger the process from another application (Build Apps, Fiori, or another application). To do this, you can use an [API trigger](https://help.sap.com/docs/build-process-automation/80e3d1a6e74844548a7d168fd1f95a98/configure-and-test-api-call-to-trigger-process).
 

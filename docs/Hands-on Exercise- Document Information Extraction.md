@@ -1,4 +1,8 @@
+<div class="draftWatermark"></div>
+
 ## Hands-on Exercise: Extract information from PDF
+
+---
 
 **<span class="mark">1.Create Process</span>**
 

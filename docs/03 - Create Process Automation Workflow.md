@@ -1,4 +1,8 @@
+<div class="draftWatermark"></div>
+
 # Process Automation
+
+---
 
 In the previous exercise, we prepared the S/4 API to be used within a business process. In this exercise, we will design the business process to create a Business Partner.
 

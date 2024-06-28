@@ -1,4 +1,9 @@
+<div class="draftWatermark"></div>
+
+
 # Next steps in SAP Build Process Automation
+
+---
 
 This scenario tries to give you a quick demonstration of some of the features available in SAP Build Process Automation.
 
