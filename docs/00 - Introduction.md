@@ -1,13 +1,13 @@
 <div class="draftWatermark"></div>
 
-# Welcome to Business Partner creation with SAP Build Process Automation
+# 欢迎使用SAP Build Process Automation中的业务伙伴创建
 
 ---
 
-This page contains an exercise to showcase the features of SAP Build Process Automation. The exercise covers a simple scenario: _Business Partner creation process_:
+此页面包含一个示例练习，以展示SAP Build Process Automation的功能。该练习覆盖了一个简单场景：**业务伙伴创建流程**
 
-![](vx_images/167866323668521.png )
+![](vx_images/167866323668521.png)
 
-The finished process will look like this:
+完成后的流程将如下所示：
 
-![](vx_images/454306858771463.png )
+![](vx_images/454306858771463.png)

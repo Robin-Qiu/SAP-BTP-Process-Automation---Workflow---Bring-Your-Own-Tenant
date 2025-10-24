@@ -1,69 +1,69 @@
 <div class="draftWatermark"></div>
 
-# Process Automation
+# 流程自动化
 
 ---
 
-In the previous exercise, we prepared the S/4 API to be used within a business process. In this exercise, we will design the business process to create a Business Partner.
+在之前的练习中，我们为业务流程准备了S/4 API。在本次练习中，我们将设计一个创建商业伙伴的业务流程。
 
 
 ![](vx_images/287066268879516.png)
 
-The process will consist of:
+该流程将包括：
 
-- A request form
-- A step to enrich the initial data
-- An approval step to confirm data is correct
-    - If approved: Business partner will be created in S/4, and a notification will be sent to the requestor
-    - If declined: A mail notification to the requestor
+- 一个请求表单
+- 一个用于丰富初始数据的步骤
+- 一个审批步骤以确认数据正确
+    - 如果通过：商业伙伴将在S/4中创建，并向请求人发送通知
+    - 如果被拒绝：将向请求人发送邮件通知
 
-## Create business process project
+## 创建业务流程项目
 
-From the SAP [SAP Build Lobby](https://build02-worksop.eu10.build.cloud.sap/):
+从SAP [SAP 构建大厅](https://build02-worksop.eu10.build.cloud.sap/)：
 
-1. Create a new project:
+1. 创建一个新项目：
 
     ![](vx_images/530197436949133.png )
 
-2. Select _Build an Automated Process_:
+2. 选择 _创建自动化流程_：
 
     ![](vx_images/411047094795708.png )
 
-3. Select _Business Process_:
+3. 选择 _业务流程_：
 
     ![](vx_images/151377846785066.png )
 
-4. Give the following name to the project and click _Create_:
+4. 给该项目命名为以下名称并点击 _创建_：
 
     ```
-    ${number} BTP creation process
+    ${number} BTP 创建流程
     ```
 
 
 ![](vx_images/388516504754652.png )
-    The project will be created. If the project does not open in a new tab, click on it once it appears in the Lobby:
+    项目将被创建。如果项目没有在新标签页中打开，请在大厅中出现后点击它：
 
 
 ![](vx_images/100350447335860.png )
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully created a new project for a business process. 
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功创建了一个新的业务流程项目。 
 
-## Create a process inside the project
+## 在项目中创建流程
 
-The project editor will open:
+项目编辑器将打开：
 
 ![](vx_images/320310603094195.png )
 
 > [!INFO]
-> Projects are composed of different artifacts, you can read more about them in the documentation: [Business Process Projects](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/business-process-projects?locale=en-US)
+> 项目由不同组件组成，您可以在文档中了解更多详情：[业务流程项目](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/business-process-projects?locale=zh-CN)
 > 
 > 
 
 ![](vx_images/43790973434833.png )
-1. Add a new process. Give it the following name (the identifier will auto populate), and click _Create_:
+1. 添加一个新流程。给它以下名称（标识符将自动填充），然后点击 _创建_：
 
     ```
-    ${number} BP approval process
+    ${number} BP 审批流程
     ```
 
    
@@ -74,358 +74,356 @@ The project editor will open:
     
 
 ![](vx_images/537981513988762.png )
-    The empty process will look like:
+    空流程将显示如下：
 
    
 
 ![](vx_images/371271580644621.png )
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully created the main process of your project. 
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功创建了项目的主流程。 
 
-## Create forms and approvals
+## 创建表单和审批
 
-Our process will include a request form, approval forms, and forms to notify about the status of the requests.
+我们的流程将包括一个请求表单、审批表单，以及用于通知请求状态的表单。
 
-### Creation Form
+### 创建表单
 
-To create the form that will start this process:
+为了创建启动此流程的表单：
 
-1. Click the ➕ button on the _Trigger_ box > _Form_ > _New Form_:
+1. 点击 _触发_ 区域的 ➕ 按钮 > _表单_ > _新建表单_：
 
   
     ![](vx_images/592120490866013.gif )
 
-2. Give a name to the form and click _Create_:
+2. 为表单命名并点击 _创建_：
 
     ```
-    Creation Form
+    创建表单
     ```
 
   
     ![](vx_images/255020647096157.png )
 
-3. Double-click on the newly created form:
+3. 双击新创建的表单：
 
     
     
 ![](vx_images/410790613047373.png )
 
-    > [!NOTE]
-    > The Form editor will open. Here, you can drag and drop the elements and set titles and labels
+> [!NOTE]
+> 表单编辑器将打开。在这里，您可以拖放元素并设置标题和标签
 
-    
+
 ![](vx_images/3362559906967.gif )
 
-4. Follow the instructions to add the following elements:
-    - Headline 1:
+4. 按照说明添加以下元素：
+    - 标题1：
         ```
-        New Business Partner Application Form
+        新商业伙伴申请表
         ```
-    - Paragraph:
+    - 段落：
         ```
-        Please provide all required details below to complete the formalities. You will be notified via email if you qualify for doing business with us. Thank you for your interest in our company.
+        请提供以下所有必需信息以完成正式手续。如果符合与我们合作的资格，您将通过邮件收到通知。感谢您对我们公司的兴趣。
         ```
-    - Dropdown:
+    - 下拉菜单：
         ```
-        Initials
+        称呼
         ```
-        Add the following options under _Manual definition_:
+        在 _手动定义_ 下添加以下选项：
         ```
-        Mr.
-        Ms.
-        Mrs.
+        先生
+        女士
         ```
         ![](vx_images/260591683247383.png )
-    - Text:
+    - 文本：
         ```
-        First Name
+        名字
         ```
   
         
 ![](vx_images/596100613732254.png )
-    - Text:
-        ```
-        Last Name
-        ```
-    - Text: 
-        ```
-        Email
-        ```
-        Add the following regular expression as custom input validation:
-        ```
-        .+@.+\..+
-        ```
+- 文本：
+```
+姓氏
+```
+- 文本： 
+```
+邮箱
+```
+添加以下正则表达式作为自定义输入验证：
+```
+.+@.+\..+
+```
 
        
         
 ![](vx_images/227321803297822.png )
 
-        > [!ATTENTION]
-        > Make sure there is no **new line** in the validation box.
-        > 
+> [!ATTENTION]
+> 请确保验证框中没有 **换行符**。
+> 
      
    ![](vx_images/475472200832073.png )
 
-    - Dropdown: 
-        ```
-        Category
-        ```
-        Add the following options under _Manual definition_:
-        ```
-        1
-        2
-        3
-        ```
+- 下拉菜单： 
+```
+类别
+```
+在 _手动定义_ 下添加以下选项：
+```
+1
+2
+3
+```
        
   ![](vx_images/230921762792502.png )
-    - Text:
-        ```
-        Organization
-        ```
-    - Text:
-        ```
-        Search Term
-        ```
-    - Text Area:
-        ```
-        Additional Comment
-        ```
+- 文本：
+    ```
+    组织
+    ```
+- 文本：
+    ```
+    搜索词
+    ```
+- 文本区域：
+    ```
+    额外说明
+    ```
        
         
 ![](vx_images/453851721887579.png )
-    > [!NOTE]
-    > All inputs should be marked as required except the last _Additional Comment_
+> [!NOTE]
+> 所有输入应标记为必填，除了最后一个 _额外说明_
 
-5. Save the form
+5. 保存表单
 
 
 ![](vx_images/82470837821039.png )
-### Creation confirmation
+### 创建确认
 
-The next form we will prepare is the creation confirmation. This form will appear after the Business Partner is created in S/4, and will notify the requestor. As before, we will leverage the forms we already have, to save us some time.
+接下来我们要准备的表单是创建确认。此表单将在商业伙伴在S/4中创建后出现，并通知请求人。和之前一样，我们将利用我们已有的表单，以节省时间。
 
-1. Go to the _Overview_ tab:
+1. 转到 _概览_ 选项卡：
 
     ![](vx_images/311771300140339.png )
 
-2. Find the creation form, open the menu on the side and click on _Duplicate_:
+2. 找到创建表单，打开侧边栏菜单并点击 _复制_：
 
   
     ![](vx_images/491651265011015.png )
 
-3. Give the form a new name and click _Duplicate_:
+3. 给表单一个新名称并点击 _复制_：
 
     ```
-    Creation confirmation
+    创建确认
     ```
 
    
     
 ![](vx_images/69262149493341.png )
-4. Follow the instructions to add and edit the fields:
+4. 按照说明添加和编辑字段：
 
-    Change the title and description:
-    - Headline 1: 
-        ```
-        Business Partner Creation Confirmation
-        ```
-    - Paragraph:
-        ```
-        Thank you for showing interest in working with us. We are happy to inform you that we have accepted your proposal and you have been added as new business partner in our company with details below. Congratulations!
-        ```
+修改标题和描述：
+- 标题1： 
+    ```
+    商业伙伴创建确认
+    ```
+- 段落：
+    ```
+    感谢您对我们合作的兴趣。我们很高兴通知您，我们已接受您的提案，并将您作为新商业伙伴加入公司，详情如下。恭喜！
+    ```
 
-    Remove the following fields:
+移除以下字段：
 
-    - Initials
-    - Email
-    - Category
-    - Search term
-    - Additional comment
+- 称呼
+- 邮箱
+- 类别
+- 搜索词
+- 额外说明
 
   
 
 ![](vx_images/464801169220489.png )
-    Make the remaining fields _Read only_:
+    将剩余字段设为 _只读_：
 
   
     
 ![](vx_images/66732320543242.png )
-    Add new fields:
+    添加新字段：
 
-    - Text: make read-only
-        ```
-        Business partner number
-        ``` 
-    - Paragraph: 
-        ```
-        We would like to finalize the contract and have you begin work as soon as possible.
+- 文本：设为只读
+    ```
+    商业伙伴编号
+    ``` 
+- 段落： 
+    ```
+    我们希望尽快完成合同并立即开始工作。
 
-        Please verify the details above and press SUBMIT button to acknowledge the acceptance.
-        ```
+    请核对上述信息并点击提交按钮以确认接受。
+    ```
 
      
         
 ![](vx_images/232121387607401.png )
-5. Save the form
+5. 保存表单
 
-The resulting form should look like:
+生成的表单应如下所示：
 
 
 ![](vx_images/366032521187727.png )
-### Approval form
+### 审批表单
 
-I promise we are almost there. This will be the last form that you will build. The form will serve as an approval step to confirm all the information is correct before creating the business partner in the S/4 system.
+我保证我们几乎完成了。这将是您要创建的最后一个表单。该表单将作为审批步骤，用于在创建S/4系统中的商业伙伴之前确认所有信息正确。
 
-1. Go to the _Overview_ tab:
+1. 转到 _概览_ 选项卡：
 
   
     
 ![](vx_images/570281546294866.png )
-2. Click on _Create_ > _Approval_:
+2. 点击 _创建_ > _审批_：
 
    
    ![](vx_images/127222549641893.png )
 
-3. Give it the following name, base the form on the _Creation form_ and click on _Create_:
+3. 给它以下名称，基于 _创建表单_ 建立表单并点击 _创建_：
 
     ```
-    Business partner approval
+    商业伙伴审批
     ```
 
  
     
 ![](vx_images/327131211046228.png )
 
-4. The fields from the _Creation form_ will appear as read only, headings and paragraphs have been removed. Add the fields from the list below:
+4. 来自 _创建表单_ 的字段将显示为只读，标题和段落已被移除。添加以下列表中的字段：
 
-    At the begining of the form:
-    - Modify the headline: 
+    在表单开头：
+    - 修改标题： 
         ```
-        Approve new Business Partner request
+        审批新的商业伙伴请求
         ```
-    - Paragraph: 
+    - 段落： 
         ```
-        A new business partner request has been initiated with below details. We have verified the details to ensure that there is no inconsistencies with the existing business partners. Please approve or reject the request:
-        ```
-
-    At the end of the form:
-    - Paragraph: 
-        ```
-        If you reject the proposal then please mention the reason for rejection which will be used in communication to the concerned business person or organization:
-        ```
-    - Text Area: 
-        ```
-        Message to the request creator
+        已发起一个新的商业伙伴请求，详情如下。我们已核实信息，以确保与现有商业伙伴无任何不一致。请批准或拒绝此请求：
         ```
 
-5. Save the form
+    在表单结尾：
+    - 段落： 
+        ```
+        如果您拒绝此提案，请说明拒绝原因，该原因将用于与相关商业人员或组织沟通：
+        ```
+    - 文本区域： 
+        ```
+        致请求创建者的消息
+        ```
 
-The form should look like:
+5. 保存表单
+
+表单应如下所示：
 
 
 ![](vx_images/2651595155596.png )
-## Design the process
+## 设计流程
 
-Now that we have the forms ready, we can design the process end to end:
+现在我们已经准备好了表单，可以设计整个端到端的流程：
 
-1. Go to the main process: `${number} BP approval process`. Right now, it only has the trigger form:
+1. 转到主流程：`${number} BP 审批流程`。目前，它只包含触发表单：
 
     
     ![](vx_images/414432007888582.png )
 
-2. Click in the ➕ button > _Approval_ > Select the `Business partner approval` approval form you just created
+2. 点击 ➕ 按钮 > _审批_ > 选择您刚刚创建的 `商业伙伴审批` 审批表单
 
     
     ![](vx_images/550372836062569.gif )
 
-    As a result, a new step with the approval is included. Note how this approval has two outputs.
+    作为结果，一个包含审批的新步骤被加入。请注意，此审批有两个输出。
 
  
     ![](vx_images/85792167016494.png )
 
-3. Following the _Approve_ branch, click in the ➕ button > _Action_ > _Browse Library_
+3. 在 _批准_ 分支下，点击 ➕ 按钮 > _操作_ > _浏览库_
 
    
     
 ![](vx_images/219903093735858.gif )
 
 
-4. Filter by your action project: `BP-API-${number}`, find _Creates a new Business Partner_ and click _Add_:
+4. 过滤您的操作项目：`BP-API-${number}`，找到 _创建新的商业伙伴_ 并点击 _添加_：
 
    
     
 ![](vx_images/365572532304845.png )
-    As a result, a new step is added to the process.
+    作为结果，一个新步骤被添加到流程中。
 
-5. To finish with this branch of the process, let's add the creation confirmation form:
+5. 为了完成此流程分支，我们来添加创建确认表单：
 
     ![](vx_images/134663894909366.png )
 
     > [!NOTE]
-    > Ignore the red mark 🔺 on each of the steps, we will take care of that later
+    > 忽略每个步骤上的红色标记 🔺，我们稍后会处理。
     > 
     > 
  
 ![](vx_images/194955912921156.png )
     
-6. Coming back to the approval, add a new mail step after _Reject_. This will trigger a mail notification:
+6. 回到审批部分，在 _拒绝_ 后添加一个新的邮件步骤。这将触发邮件通知：
 
    
     ![](vx_images/358445819668532.png )
 
-    As a result, a new step is added:
+    作为结果，一个新步骤被添加：
 
 
 ![](vx_images/123046066569072.png )
 
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully design the process. Save your progress.
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功设计了该流程。保存您的进度。
 
-## Bind data to forms, actions and mail
+## 绑定数据到表单、操作和邮件
 
-Now that the steps of the process are clear, let's complete the settings of each of them. What we will do is to tell SAP Build Process Automation how the data is going to move around the steps:
+现在流程的步骤已明确，让我们完成每个步骤的设置。我们将告诉 SAP 构建流程自动化数据在各个步骤间如何流动：
 
-1. Click on the _Business partner approval_ step. You will see the missing information in red:
+1. 点击 _商业伙伴审批_ 步骤。您将看到缺失的信息以红色标出：
 
   
     ![](vx_images/163252665885371.png )
 
-2. We can use the context data from the process to fill the fields:
+2. 我们可以使用流程中的上下文数据来填充字段：
 
-    - For _Subject_:
+    - 对于 _主题_：
         
-        When pasting, right-click and choose _paste without formatting_ or _paste and match style_
+        粘贴时，右键并选择 _不带格式粘贴_ 或 _匹配样式粘贴_
         ```
-        New business partner request for <Organization>
+        新的商业伙伴请求，针对 <组织>
         ```
 
     ![](vx_images/315853198156979.gif )
 
-    - For _Users_: Use your participant username to receive the tasks:
+    - 对于 _用户_：使用您的参与者用户名接收任务：
 
     ```
-    user0${number}@domain.com
+    XXXX@cnpc.com.cn
     ```
 
   
     
 ![](vx_images/489811839110392.png )
     > [!INFO]
-    > For productive projects, we recommend assigning tasks to groups using _role collections_ of the subaccount, or groups from your Cloud Identity Service (IAS), read more in the documentation: [Guidelines for Specifying Recipient Users - SAP Build Process Automation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/guidelines-for-specifying-recipient-users?locale=en-US)
+    > 对于生产项目，我们建议使用子账户的 _角色集合_ 或来自您云身份服务 (IAS) 的组来分配任务，更多信息请参阅文档：[指定收件人用户指南 - SAP 构建流程自动化](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/guidelines-for-specifying-recipient-users?locale=zh-CN)
 
-
-3. Still on _Business partner approval_, click on the tab _Inputs_ and map the inputs with the information coming from _Creation form (Trigger)_:
+3. 仍在 _商业伙伴审批_ 上，点击 _输入_ 选项卡，并将输入与来自 _创建表单 (触发)_ 的信息进行映射：
 
     
     ![](vx_images/27652879241518.png )
 
-4. Moving to the next step, click in the **Action Creates a new business partner record**. Create a new destination variable:
+4. 转到下一步，点击 **操作 创建新的商业伙伴记录**。创建一个新的目标变量：
 
 
 ![](vx_images/75016854771474.png )
 
 
-This variable is a placeholder. When we deploy the project, you will assign an existing destination to this variable. Give it a meaningful name and click _Create_:
+该变量是占位符。在部署项目时，您将为该变量分配一个现有的目标。赋予一个有意义的名称并点击 _创建_：
     
 ```
     s4hDestination
@@ -434,149 +432,146 @@ This variable is a placeholder. When we deploy the project, you will assign an e
  
 ![](vx_images/39383980827016.png )
 
-5. As before, go to the tab _Inputs_ and map the data to the API fields:
+5. 如前所述，转到 _输入_ 选项卡，并将数据映射到API字段：
 
     
     ![](vx_images/461023581885702.png )
 
-6. Continue with the _Creation confirmation_ form:
+6. 继续完成 _创建确认_ 表单：
 
-    - _Subject_:
+    - _主题_：
         
-        When pasting, right-click and choose _paste without formatting_ or _paste and match style_
-        ```
-        Congratulations! You have been successfully added as a business partner in our company
-        ```
-    - _Users_: Use your participant user email to receive the tasks:
+    粘贴时，右键并选择 _不带格式粘贴_ 或 _匹配样式粘贴_
+    ```
+    恭喜！您已成功被添加为我司的商业伙伴
+    ```
+    - _用户_：使用您的参与者用户邮箱接收任务：
 
     ```
-    user0${number}@domain.com
+    XXXXV@cnpc.com.cn
     ```
 
     ![02-04-project-008](vx_images/4693405081406.png )
 
-7. In the_Inputs_ tab, map the fields to the data. This time, we will include the business partner number coming from the S/4 system:
+7. 在_输入_选项卡中，将字段映射到数据。这次我们将包含来自S/4系统的商业伙伴编号：
 
    
     
 ![](vx_images/161433428160824.png )
 
-8. Finally, click on the _Send Mail_ step and fill the following:
+8. 最后，点击 _发送邮件_ 步骤并填写以下内容：
 
-    - To: Type a real email where you want to get the norification, or use your participant user email: `user0${number}@domain.com`
-    - Subject: 
+    - 收件人：输入您希望接收通知的真实邮箱地址，或使用您的参与者邮箱：`XXXXV@cnpc.com.cn`
+    - 主题： 
         ```
-        [ATTENTION] Your business partner request has been rejected
+        [注意] 您的商业伙伴请求已被拒绝
         ```
 
     ![](vx_images/308592950734309.png )
 
-9. To work on the mail body, click _Open Mail Body Editor_
+9. 为编辑邮件正文，点击 _打开邮件正文编辑器_
 
  
     ![](vx_images/505201742444701.png )
     
 
-    The editor will open.
+    编辑器将打开。
 
-10. Paste the following text and replace the placeholders with the actual variables:
+10. 粘贴以下文本，并用实际变量替换占位符：
 
     ```
-    Dear <FirstName> <LastName>,
+    亲爱的 <FirstName> <LastName>，
     
-    Thank you for showing interest in working with us.
+    感谢您对我们合作的兴趣。
     
-    Regrettably, your request for being a business partner with us has been rejected by the business partner manager, citing the following reason:
+    遗憾的是，您的请求作为商业伙伴被商业伙伴经理拒绝，理由如下：
     
     <MessageToBusinessPartner>
     
-    We'll be sure to contact you if any opportunity presents itself. Thank you again for your interest in working with us. We wish you success in your future endeavours.
+    我们将确保在有任何机会时与您联系。再次感谢您对我们合作的兴趣。祝您未来一切顺利。
     
-    Best Regards,
-    SAP Build Process Automation
+    此致，  
+    SAP 构建流程自动化
     ```
 
    
     
 ![](vx_images/283742150629453.png )
-11. Now all red marks are gone! Save the process.
+11. 现在所有红色标记都消失了！保存流程。
 
   
 ![](vx_images/457542917570476.png )
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> The process is ready to be released and deployed. 
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 该流程已准备就绪，可以发布和部署。 
 
-## Release and deploy the project
+## 发布并部署项目
 
-1. Click on the _Release_ button that is above the _Save_ button.
+1. 点击位于 _保存_ 按钮上方的 _发布_ 按钮。
 
   
     
 ![](vx_images/22993557101076.png )
-2. Because this is the first release, there is no need to change the version number. You can click _Release_:
+2. 因为这是首次发布，无需更改版本号。您可以点击 _发布_：
 
  
     
 ![](vx_images/364923213842884.png )
-    After the release, you can notice how the version number and the _Released_ tag appeared.
+    发布后，您会注意到版本号和 _已发布_ 标签的出现。
 
    
-![](vx_images/532433124657080.png )
-    This version of the project is now read only.
+![](vx_532433124657080.png )
+    该项目的此版本现在为只读。
 
-3. To deploy, click on the _Deploy_ button:
+3. 要部署，请点击 _部署_ 按钮：
 
     ![](vx_images/92023841424431.png )
 
-4. Select the _Public_ environment:
+4. 选择 _公共_ 环境：
 ![](vx_images/233923104942544.png ))
 
-5. Assign values to variables. Here is where you will assign the actual destination (the destination name might be different in your case):
+5. 为变量赋值。在这里，您将分配实际的目标（目标名称可能因情况而异）：
 
 ![](vx_images/27784079551252.png )
 
-6. The project will be deployed. When it finishes, you will see the tag _Deployed_:
+6. 项目将被部署。部署完成后，您将看到 _已部署_ 标签：
 
  
     ![](vx_images/181852787995100.png )
 
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully deployed the project.
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功部署项目。
 
-## Test the process
+## 测试流程
 
-1. Go to the main process: `${number} BP approval process`, and click once on the _Creation Form_. Copy the _Form link_:
+1. 转到主流程：`${number} BP 审批流程`，并点击一次 _创建表单_。复制 _表单链接_：
 
  
     ![](vx_images/174353926221612.png )
 
-2. Open the link in a new tab, the request form will show:
+2. 在新标签页中打开链接，请求表单将显示：
 
     ![](vx_images/316654332312325.png )
 
-    Fill out the form and click _Submit_, at the bottom.
-
+    填写表单并点击底部的 _提交_。
 
 ![](vx_images/471882358906085.png )
-3. Go to SAP [SAP Build Lobby](https://build02-worksop.eu10.build.cloud.sap/) and access _My Inbox_:
+3. 转到SAP [SAP 构建大厅](https://build02-worksop.eu10.build.cloud.sap/) 并访问 _我的收件箱_：
 
     
 ![](vx_images/598594293392318.png )
-4. You should have a new task awaiting approval. Verify that the information is OK, and click _Approve_ or _Reject_:
+4. 您应该有一个新的待审批任务。验证信息正确，并点击 _批准_ 或 _拒绝_：
 
   
    ![](vx_images/501782799439313.png )
 
-    If you approve, you will get a new task confirming the new business partner, including the business partner number:
+    如果批准，您将收到一个新任务，确认新商业伙伴，包括商业伙伴编号：
 
     
    ![](vx_images/81923385523321.png )
 
-    > [!NOTE|icon:fa-solid fa-camera|label:Screenshot]
-    > Take a screenshot of the inbox showing the business partner creation confirmation. Click <a href="mailto:sap_btp_adoption_workshop@sap.com?subject=BUILD02_WORKSHOP_DAY_2_COMPLETION_USER0${number}&body=Please make sure the subject looks ok, and attach the screenshot before sending.">here</a> to create a new email. Send the screenshot to `sap_btp_adoption_workshop@sap.com`, including `BUILD02_WORKSHOP_DAY_2_COMPLETION_USER0${number}` as the subject.
 
-    If you reject, you will get an email with the comment:
+如果拒绝，您将收到一封带有评论的邮件：
 
 ![](vx_images/373003740346367.png )
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully built and tested a business process that interacts with an S/4 system with SAP Build Process Automation.
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功构建并测试了一个与S/4系统交互的业务流程，使用SAP 构建流程自动化。

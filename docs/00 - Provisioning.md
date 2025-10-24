@@ -1,88 +1,86 @@
 <div class="draftWatermark"></div>
 
-# Setting up subaccount for SAP Build Process Automation
+# 为 SAP 构建流程自动化设置子账号
 
 ---
 
-## 1. Verify entitlements
+## 1. 验证权限
 
-To use _SAP Build Process Automation_, your global account must have some service plans available.
+要使用 _SAP 构建流程自动化_，您的全局账号必须拥有某些服务计划。
 
-From your _Global Account_, go to _Entitlements_ -> _Service Assignments_. 
+从您的 _全局账号_ 中，进入 _权限_ -> _服务分配_。
 
-Scroll down to _SAP Build Process Automation_.
-
+滚动到底部找到 _SAP 构建流程自动化_。
 
 ![service-plans](vx_images/374085129578843.png )
-- **standard (Application)**: This is the subscription service, to access _SAP Build Lobby_.
-- **advanced-user**: They can design, monitor, or administrate the solution.
-- **standard-user**: They are process participants who trigger, approve, or contribute to a process instance.
-- **standard** (_process-automation-service_): Allows you to create a service instance when coupled with the standard (Application) entitlement.
+- **标准 (应用)**：这是订阅服务，用于访问 _SAP 构建大厅_。
+- **高级用户**：可以设计、监控或管理该解决方案。
+- **标准用户**：作为流程参与者，可以触发、审批或参与流程实例。
+- **标准**（_流程自动化服务_）：可与标准（应用）权限结合使用，创建服务实例。
 
-The following entitlements are optional and not needed for this scenario:
+以下权限是可选的，本场景中不需要：
 
-- **storage**: Allows you to increase the storage quota if needed.
-- **api-calls**: Allows you to increase the API calls quota if needed.
-- **automation-attended**: Allows you to use automations (bots) in attended mode, which means users have the agent installed in their machines.
-- **automation-unattended**: Allows you to use automations (bots) in unattended mode, which means the bot runs in the background.
+- **存储**：如果需要可增加存储配额。
+- **API调用**：如果需要可增加API调用配额。
+- **自动化（有人值守）**：允许使用自动化（机器人）在有人值守模式下运行，即用户需在本地安装代理。
+- **自动化（无人值守）**：允许使用自动化（机器人）在无人值守模式下运行，即机器人在后台运行。
 
-
-> If you want to try _SAP Build Process Automation_ using the _free tier_, these are the relevant entitlements:
+> 如果您想尝试使用 _免费 tier_ 运行 _SAP 构建流程自动化_，相关权限如下：
 > 
-> - **free (Application)**: This is the subscription service, to access _SAP Build Lobby_.
-> - **standard** (_process-automation-service_): Allows you to create a service instance when coupled with the free (Application) entitlement.
+> - **免费 (应用)**：这是订阅服务，用于访问 _SAP 构建大厅_。
+> - **标准**（_流程自动化服务_）：可与免费（应用）权限结合使用，创建服务实例。
 > 
 
-## 2. Run the Booster
+## 2. 运行 Booster
 
-Using _Boosters_, you can configure _SAP Build Process Automation_ in a new or an existing subaccount. 
+通过使用 _Booster_，您可以配置 _SAP 构建流程自动化_ 到新的或现有的子账号中。
 
-From your _Global Account_, go to _Boosters_:
+从您的 _全局账号_ 中，进入 _Booster_：
 
 ![cockpit-boosters](vx_images/416864059291821.png )
 
-Search for `build process` to filter the results.
+搜索 `build process` 以过滤结果。
 
-Below are the links to the official documentation on this process, we recommend you read them together with this page when running the booster:
+以下链接是此流程的官方文档，我们建议您在运行 Booster 时与本页面一起阅读：
 
-- [Set up account for SAP Build Process Automation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/subscribe-to-sap-build-process-automation-standard-plan?locale=en-US): to use the standard plan
-- [Set up account for SAP Build Process Automation (Free)](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/get-free-access-to-sap-build-process-automation?locale=en-US): to use _free tier_
+- [为 SAP 构建流程自动化设置账号](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/subscribe-to-sap-build-process-automation-standard-plan?locale=en-US)：用于使用标准计划
+- [为 SAP 构建流程自动化设置账号（免费版）](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/get-free-access-to-sap-build-process-automation?locale=en-US)：用于使用 _免费版_
 
 ![boosters](vx_images/552605234961597.png )
 
-### Booster steps
+### Booster 步骤
 
-The wizard will take you over the following steps:
+向导将引导您完成以下步骤：
 
-1. Verify you are a global account or directory admin, and verify entitlements are available
+1. 验证您是全局账号或目录管理员，并验证权限可用
 
     > [!WARNING]
-    > You can ignore warnings of optional entitlements (_storage_, _api-calls_, _automation-attended_, _automation-unattended_)
+    > 您可以忽略可选权限的警告（_存储_、_API调用_、_自动化（有人值守）_、_自动化（无人值守）_）
     > 
     > 
     ![booster-warning-entitlement](vx_images/296744540379624.png )
-2. Choose a new subaccount or an existing one
-3. Confirm list of entitlements and select subaccount or provide new subaccount details
+2. 选择一个新子账号或现有子账号
+3. 确认权限列表并选择子账号或提供新的子账号详情
 
     > [!TIP]
-    > At this point, you can remove any optional entitlements (_storage_, _api-calls_, _automation-attended_, _automation-unattended_). You can manually add them at any point later, as you need them for your projects.
+    > 在此阶段，您可以移除任何可选权限（_存储_、_API调用_、_自动化（有人值守）_、_自动化（无人值守）_）。您可以在之后任何需要时手动添加它们，以满足项目需求。
     > 
     >
    ![booster-entitlements](vx_images/16453431896361.png )
-4. Select the identity provider for platform and business users, and add them to assign admins (access to the subaccount) and developers (access to _SAP Build Lobby_)
+4. 选择平台和业务用户的标识提供者，并添加他们以分配管理员（访问子账号）和开发者（访问 _SAP 构建大厅_）
 
-    - _Custom Identity Provider for Platform Users_: In case of doubt, choose the identity provider that you used to login to _SAP BTP Cockpit_ to run this booster.
-    - _Custom Identity Provider for Applications_: Choose the identity provider where your users (developers and process participants) exist.
-    - _Administrators_: Add users who should have access to the subaccount.
-    - _Developers_: Add users who should have access to _SAP Build Lobby_.
+    - _平台用户自定义标识提供者_：如有疑问，请选择您用于登录 _SAP BTP 控制台_ 的标识提供者来运行此 Booster。
+    - _应用自定义标识提供者_：选择您的用户（开发者和流程参与者）存在的标识提供者。
+    - _管理员_：添加应具有子账号访问权限的用户。
+    - _开发者_：添加应具有 _SAP 构建大厅_ 访问权限的用户。
 
     > [!TIP]
-    > - You can change this configuration later from the subaccount at _Security -> Trust Configuration_.
-    > - Your user is automatically added as both an admin and developer.
-    > - You can add/remove users any time from the subaccount at _Security -> Users_.
-5. Review and start the process.
+    > - 您稍后可以从子账号的 _安全 -> 信任配置_ 中更改此配置。
+    > - 您的用户将自动作为管理员和开发者添加。
+    > - 您可以在任何时间从子账号的 _安全 -> 用户_ 中添加或移除用户。
+5. 审查并启动流程。
 
-Wait until it finishes. If there is no problem:
+等待其完成。如果没有问题：
 
-> [!TIP|icon:fa-solid fa-check|label:Congratulations]
-> You have successfully configured _SAP Build Process Automation_. Continue to configure the requirements for the Business Partner scenario.
+> [!TIP|icon:fa-solid fa-check|label:恭喜]
+> 您已成功配置 _SAP 构建流程自动化_。继续配置商业伙伴场景的需求。

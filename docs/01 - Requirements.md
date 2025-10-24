@@ -1,52 +1,49 @@
 <div class="draftWatermark"></div>
 
-
-# Requirements for Business Partner scenario
+# 业务伙伴场景的要求
 
 ---
 
-<!-- - SAP Build Process Automation subscription ([instructions here](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/subscribe-to-sap-build-process-automation-standard-plan)) -->
+在开始之前，请确保你的用户拥有[SAP Build Process Automation的开发或管理员权限](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/authorizations)，并且你是子账户的管理员。
 
-Before starting, make sure your user has [developer or admin permission](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/authorizations) for SAP Build Process Automation, and is an administrator in the subaccount.
+## 1. S/4后端的目的地
 
-## 1. Destination for S/4 backend
+为了为S4系统准备场景（可选）：
 
-To prepare the S4 system for the scenario: (***Optional***)
+- 在S/4系统中设置通信安排**SAP_COM_0008**
+    - [S/4HANA Cloud API文档](https://help.sap.com/docs/SAP_S4HANA_CLOUD/3c916ef10fc240c9afc594b346ffaf77/85043858ea0f9244e10000000a4450e5.html)
+    - [S/4HANA API文档](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/44e06f22436c43e582db6ccd5250e29b/85043858ea0f9244e10000000a4450e5.html)
+- 如果使用S/4HANA私有云或本地部署，必须在SAP BTP中安装和配置SAP Cloud Connector（[SAP Cloud Connector文档](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector)）
 
-- Set up the communication arrangement **SAP_COM_0008** in the S/4 system 
-    - [S/4HANA Cloud API docs](https://help.sap.com/docs/SAP_S4HANA_CLOUD/3c916ef10fc240c9afc594b346ffaf77/85043858ea0f9244e10000000a4450e5.html)
-    - [S/4HANA API docs](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/44e06f22436c43e582db6ccd5250e29b/85043858ea0f9244e10000000a4450e5.html)
-- If using S/4HANA private cloud or on-prem,  SAP Cloud Connector must be installed and configured in SAP BTP ([SAP Cloud Connector docs](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector))
+### 在SAP BTP中创建目的地：
 
-### Create a destination in SAP BTP:
-
-- URL must include `/sap/opu/odata/sap`
-- Must have the following additional properties:
+- URL必须包含 `/sap/opu/odata/sap`
+- 需要有以下附加属性：
     - `sap.applicationdevelopment.actions.enabled`: `true`
     - `sap.processautomation.enabled`: `true`
-- Use the communication user created in S4
-- The name will be used to identify this destination
+- 使用在S4中创建的通信用户
+- 目的地名称将用于标识此目的地
 
-![](vx_images/99366158262686.png )
+![](vx_images/99366158262686.png)
 
-> Download a sample destination for S/4HANA Cloud [S4HC](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/S4HC ':include')  :truck::truck::truck:.
-> The communication user credential for connecting to S/4HANA Cloud will be supplied during workshop and please reminder the trainer if he/she forgets to send out.
+> 下载S/4HANA Cloud的示例目的地[S4HC](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/S4HC):truck::truck::truck:。
+> 在工作坊期间会提供连接到S/4HANA Cloud的通信用户凭证，如果讲师忘记发送，请提醒他们。
 
-### Add destination to SAP Build
+### 将目的地添加到SAP Build
 
-From _SAP Build Lobby_, go to _Settings_ > _Destinations_.
+从**[SAP构建大厅](https://cnpcint-dev.eu10.build.cloud.sap/lobby)**，前往 **设置** > **目的地**
 
-Add the destination you just created.
+添加刚才创建的目的地
 
-![](vx_images/431492252896894.png )
+![](vx_images/431492252896894.png)
 
-![](vx_images/415700597846119.png )
+![](vx_images/415700597846119.png)
 
-## 2. Destination to enable emails (optional)
+## 2. 发送电子邮件的目的地（可选）
 
-Follow [SMTP destination for SAP Process Automation](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configuring-smtp-mail-destination) (to be able to send mails from the business process).
+遵循[SAP流程自动化SMTP目的地配置](https://help.sap.com/docs/build-process-automation/sap-build-process-automation/configuring-smtp-mail-destination)（以便能够从业务流程发送邮件）。
 
-![](vx_images/428220874958644.png )
+![](vx_images/428220874958644.png)
 
-> Download a sample destination [sap_process_automation_mail](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/sap_process_automation_mail ':include')  :truck::truck::truck:.
-> The communication user credential for connecting to the testing mail server will be supplied during workshop and please reminder the trainer if he/she forgets to send out.
+> 下载示例目的地[sap_process_automation_mail](https://robin-qiu.github.io/SAP-BTP-Process-Automation---Workflow---Bring-Your-Own-Tenant/vx_attachments/154271525142569/sap_process_automation_mail):truck::truck::truck:。
+> 在工作坊期间会提供连接到测试邮件服务器的通信用户凭证，如果讲师忘记发送，请提醒他们。
